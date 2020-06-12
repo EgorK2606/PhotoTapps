@@ -24,6 +24,10 @@ class PhotoViewController: UIViewController {
     
 
     @IBAction func shareImage(_ sender: Any) {
+        
+        let shareController = UIActivityViewController(activityItems: [image!], applicationActivities: nil)
+        
+        present(shareController, animated: true, completion: nil)
     }
     
 }
